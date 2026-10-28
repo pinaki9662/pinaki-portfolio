@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pinaki Prasad Karak - B.Tech CSE (AI/ML) Student at Adamas University. Personal portfolio showcasing projects in C, Python, and web development." />
+  <title>Pinaki Prasad Karak | Portfolio</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans for clean typography & JetBrains Mono for code accents -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVIGATION BAR
+       Sticky header with brand logo, desktop links & mobile toggle
+       ========================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Pinaki Home">
+        <span class="logo-bracket">&lt;</span><span class="logo-name">Pinaki</span><span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       HERO SECTION
+       High-impact introduction with dual neon glow & CTA buttons
+       ========================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <!-- Status Pill Badge -->
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span class="status-text">Open to Learn & Collaborate</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Pinaki Prasad Karak</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          <span class="typing-text" id="typing-text">B.Tech CSE (AI/ML) Student</span>
+          <span class="typing-cursor">|</span>
+        </p>
+
+        <p class="hero-description">
+          Computer Science student at <strong>Adamas University</strong> passionate about algorithmic problem solving with <strong>C</strong> and <strong>Python</strong>, actively building foundations in <strong>Artificial Intelligence, Machine Learning, and Full-Stack Web Development</strong>.
+        </p>
+
+        <!-- Call-To-Action (CTA) Buttons -->
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Social Quick Links -->
+        <div class="hero-socials">
+          <a href="https://github.com/pinaki9662" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="Pinaki's GitHub Profile">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>github.com/pinaki9662</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Modern Tech Card Preview -->
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-card-header">
+            <div class="code-card-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="code-card-title">developer_profile.c</span>
+          </div>
+          <div class="code-card-body">
+            <pre><code><span class="code-keyword">#include</span> <span class="code-string">&lt;stdio.h&gt;</span>
+
+<span class="code-keyword">int</span> <span class="code-func">main</span>() {
+    <span class="code-keyword">char</span> name[] = <span class="code-string">"Pinaki Prasad Karak"</span>;
+    <span class="code-keyword">char</span> focus[] = <span class="code-string">"AI/ML & Full-Stack"</span>;
+    
+    <span class="code-func">printf</span>(<span class="code-string">"Welcome to my portfolio!\n"</span>);
+    <span class="code-keyword">return</span> <span class="code-number">0</span>;
+}</code></pre>
+          </div>
+          <div class="code-card-footer">
+            <span class="badge-tech">GCC Compiling</span>
+            <span class="badge-status">● Ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ABOUT ME SECTION
+       Background story, interests, and engineering mindset
+       ========================================================= -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01. Overview</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="about-icon-wrapper purple-glow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Who I Am</h3>
+          <p class="card-text">
+            I am an undergraduate student pursuing my <strong>B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning</strong> at <strong>Adamas University</strong>. I enjoy understanding how computers execute logic at the lowest level and how intelligent algorithms solve real-world problems.
+          </p>
+        </div>
+
+        <div class="about-card glass-card">
+          <div class="about-icon-wrapper cyan-glow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <h3 class="card-title">What I Love Building</h3>
+          <p class="card-text">
+            My programming journey began with structured thinking in <strong>C</strong>, understanding variables, loops, arrays, and pointer logic. In <strong>Python</strong>, I appreciate clean syntax for scripting and data exploration. I believe that mastering fundamentals is the best foundation for advanced AI/ML models.
+          </p>
+        </div>
+
+        <div class="about-card glass-card">
+          <div class="about-icon-wrapper purple-glow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Continuous Growth</h3>
+          <p class="card-text">
+            I am actively expanding my skillset into modern web development (HTML, CSS, JavaScript) to build intuitive interfaces for machine learning tools, bridging the gap between intelligent backend logic and user-friendly web experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SKILLS SECTION
+       Current verified skills vs. actively learning roadmap
+       ========================================================= -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02. Capabilities</span>
+        <h2 class="section-title">Skills & Learning Roadmap</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-wrapper">
+        <!-- Current Skills Column -->
+        <div class="skills-column">
+          <div class="column-header">
+            <span class="column-badge badge-current">Current Strengths</span>
+            <h3 class="column-title">Core Foundations</h3>
+            <p class="column-desc">Technologies and concepts I currently practice and use in academic coursework and projects.</p>
+          </div>
+
+          <div class="skills-list">
+            <!-- Skill Item 1 -->
+            <div class="skill-card glass-card">
+              <div class="skill-info">
+                <div class="skill-meta">
+                  <span class="skill-name">C Programming</span>
+                  <span class="skill-level">Core Foundation</span>
+                </div>
+                <p class="skill-desc">Structured programming, control flow, functions, arrays, memory concepts, and foundational algorithm implementation.</p>
+              </div>
+              <div class="skill-tags">
+                <span class="tag">Logic Building</span>
+                <span class="tag">Data Types</span>
+                <span class="tag">Pointers</span>
+              </div>
+            </div>
+
+            <!-- Skill Item 2 -->
+            <div class="skill-card glass-card">
+              <div class="skill-info">
+                <div class="skill-meta">
+                  <span class="skill-name">Python (Basics)</span>
+                  <span class="skill-level">Elementary / Scripting</span>
+                </div>
+                <p class="skill-desc">Syntax fundamentals, standard data structures (lists, dictionaries, tuples), loops, functions, and basic problem solving.</p>
+              </div>
+              <div class="skill-tags">
+                <span class="tag">Automation</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Clean Code</span>
+              </div>
+            </div>
+
+            <!-- Skill Item 3 -->
+            <div class="skill-card glass-card">
+              <div class="skill-info">
+                <div class="skill-meta">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-level">Version Control</span>
+                </div>
+                <p class="skill-desc">Tracking code revisions, managing remote repositories, commits, pushes, and open-source project management on GitHub.</p>
+              </div>
+              <div class="skill-tags">
+                <span class="tag">Git CLI</span>
+                <span class="tag">GitHub Repos</span>
+                <span class="tag">Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Learning Goals Column -->
+        <div class="skills-column">
+          <div class="column-header">
+            <span class="column-badge badge-learning">Active Roadmap</span>
+            <h3 class="column-title">Currently Learning</h3>
+            <p class="column-desc">Areas and modern web stacks I am actively studying and implementing into real projects.</p>
+          </div>
+
+          <div class="learning-grid">
+            <div class="learning-card glass-card">
+              <div class="learning-icon cyan-text">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4l7 16 3-7 7-3z"/>
+                </svg>
+              </div>
+              <div class="learning-content">
+                <h4>HTML5 & Semantic Markup</h4>
+                <p>Structuring accessible, SEO-friendly, and modern web content using clean standards.</p>
+              </div>
+            </div>
+
+            <div class="learning-card glass-card">
+              <div class="learning-icon purple-text">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M8 12h8"/>
+                </svg>
+              </div>
+              <div class="learning-content">
+                <h4>CSS3, Flexbox & Grid</h4>
+                <p>Modern responsive layouts, dark theme styling, keyframe animations, and custom UI design.</p>
+              </div>
+            </div>
+
+            <div class="learning-card glass-card">
+              <div class="learning-icon cyan-text">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+              <div class="learning-content">
+                <h4>JavaScript (DOM & ES6+)</h4>
+                <p>Dynamic user interactions, event handling, asynchronous fetching, and modern syntax.</p>
+              </div>
+            </div>
+
+            <div class="learning-card glass-card">
+              <div class="learning-icon purple-text">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <div class="learning-content">
+                <h4>AI & Machine Learning</h4>
+                <p>Understanding predictive models, data preprocessing, machine learning algorithms, and neural networks.</p>
+              </div>
+            </div>
+
+            <div class="learning-card glass-card">
+              <div class="learning-icon cyan-text">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z"/>
+                </svg>
+              </div>
+              <div class="learning-content">
+                <h4>Full-Stack Integration</h4>
+                <p>Connecting front-end web clients to backend APIs and intelligent data services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PROJECTS SECTION
+       Real GitHub repositories with direct links and descriptions
+       ========================================================= -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03. Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Real repositories from my GitHub showcasing my programming journey and problem-solving practice.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: programming-c -->
+        <article class="project-card glass-card">
+          <div class="project-top">
+            <div class="folder-icon purple-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <a href="https://github.com/pinaki9662/programming-c" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Visit programming-c repository on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="project-body">
+            <span class="project-category">C Language / Fundamentals</span>
+            <h3 class="project-title">
+              <a href="https://github.com/pinaki9662/programming-c" target="_blank" rel="noopener noreferrer">
+                programming-c
+              </a>
+            </h3>
+            <p class="project-description">
+              A structured collection of C programming exercises, algorithmic problems, and core implementations demonstrating control structures, memory management basics, and mathematical logic.
+            </p>
+          </div>
+
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="tech-tag">C</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">Logic</span>
+            </div>
+            <a href="https://github.com/pinaki9662/programming-c" target="_blank" rel="noopener noreferrer" class="project-btn">
+              <span>View Repo</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Newcreation-demo -->
+        <article class="project-card glass-card">
+          <div class="project-top">
+            <div class="folder-icon cyan-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <a href="https://github.com/pinaki9662/Newcreation-demo" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Visit Newcreation-demo repository on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="project-body">
+            <span class="project-category">Exploration & Practice</span>
+            <h3 class="project-title">
+              <a href="https://github.com/pinaki9662/Newcreation-demo" target="_blank" rel="noopener noreferrer">
+                Newcreation-demo
+              </a>
+            </h3>
+            <p class="project-description">
+              An exploratory demonstration codebase highlighting hands-on testing of newly learned concepts, project organization, and prototype feature experimentation.
+            </p>
+          </div>
+
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="tech-tag">Experimental</span>
+              <span class="tech-tag">Demo</span>
+              <span class="tech-tag">Prototyping</span>
+            </div>
+            <a href="https://github.com/pinaki9662/Newcreation-demo" target="_blank" rel="noopener noreferrer" class="project-btn">
+              <span>View Repo</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: CODSOFT_TASKSNO -->
+        <article class="project-card glass-card">
+          <div class="project-top">
+            <div class="folder-icon purple-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <a href="https://github.com/pinaki9662/CODSOFT_TASKSNO" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Visit CODSOFT_TASKSNO repository on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="project-body">
+            <span class="project-category">Hands-on Tasks / Internship</span>
+            <h3 class="project-title">
+              <a href="https://github.com/pinaki9662/CODSOFT_TASKSNO" target="_blank" rel="noopener noreferrer">
+                CODSOFT_TASKSNO
+              </a>
+            </h3>
+            <p class="project-description">
+              Practical task assignments and solutions completed for CodSoft, reflecting structured problem solving, code organization, and requirement-focused implementation.
+            </p>
+          </div>
+
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="tech-tag">Tasks</span>
+              <span class="tech-tag">Problem Solving</span>
+              <span class="tech-tag">Hands-on</span>
+            </div>
+            <a href="https://github.com/pinaki9662/CODSOFT_TASKSNO" target="_blank" rel="noopener noreferrer" class="project-btn">
+              <span>View Repo</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       EDUCATION SECTION
+       Academic qualification and university details
+       ========================================================= -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04. Academic Background</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="education-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="education-card glass-card">
+            <div class="edu-header">
+              <div>
+                <span class="edu-badge">Undergraduate Degree</span>
+                <h3 class="edu-degree">B.Tech in Computer Science & Engineering (AI/ML)</h3>
+                <h4 class="edu-institution">Adamas University</h4>
+              </div>
+              <div class="edu-status">
+                <span class="status-indicator">● In Progress</span>
+              </div>
+            </div>
+
+            <p class="edu-description">
+              Pursuing undergraduate studies with an intensive specialization in <strong>Artificial Intelligence & Machine Learning</strong>. The curriculum covers foundational computer systems, structured problem solving, discrete mathematics, object-oriented concepts, and advanced machine learning principles.
+            </p>
+
+            <div class="edu-highlights">
+              <div class="highlight-item">
+                <span class="highlight-bullet">▹</span>
+                <span><strong>Specialization:</strong> Artificial Intelligence & Machine Learning</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-bullet">▹</span>
+                <span><strong>Focus Areas:</strong> Programming Fundamentals, Data Logic, Python Scripting & Future AI Models</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-bullet">▹</span>
+                <span><strong>Institution:</strong> Adamas University, Kolkata, West Bengal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT SECTION
+       Direct GitHub link and clean interactive form
+       ========================================================= -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05. Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Have a question, collaboration idea, or simply want to connect? Reach out below!</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact Details Card -->
+        <div class="contact-info-card glass-card">
+          <h3 class="contact-card-title">Let's talk tech</h3>
+          <p class="contact-card-desc">
+            I am always excited to discuss programming in C, Python basics, web development projects, or AI/ML ideas. Feel free to connect via GitHub or drop a message.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="contact-item">
+              <div class="contact-icon purple-glow">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">GitHub Profile</span>
+                <a href="https://github.com/pinaki9662" target="_blank" rel="noopener noreferrer" class="contact-value">
+                  github.com/pinaki9662
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon cyan-glow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">Location / University</span>
+                <span class="contact-value">Adamas University, West Bengal, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Working Client-Side Contact Form -->
+        <div class="contact-form-card glass-card">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Smith" required />
+              <span class="form-error" id="name-error">Please enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="e.g. alex@example.com" required />
+              <span class="form-error" id="email-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Project inquiry / Collaboration" required />
+              <span class="form-error" id="subject-error">Please provide a subject.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" rows="4" class="form-input form-textarea" placeholder="Hi Pinaki, I saw your portfolio and..." required></textarea>
+              <span class="form-error" id="message-error">Please write a short message.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+              <span>Send Message</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+
+            <!-- Form Status Alert -->
+            <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+       Copyright, signature & back-to-top button
+       ========================================================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-text">
+        Designed & Built by <strong>Pinaki Prasad Karak</strong> &copy; <span id="current-year">2026</span>
+      </p>
+      <p class="footer-subtext">
+        Powered by Semantic HTML5, CSS3 & Vanilla JavaScript.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
